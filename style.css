@@ -13,6 +13,14 @@ ul {
   list-style: none;
 }
 
+body {
+  margin: 0;
+}
+
+.navigation {
+  margin: 20px 10px 0 10px;
+}
+
 .navigation-items {
   display: flex;
   justify-content: space-between;
@@ -167,9 +175,12 @@ a {
   list-style: none;
 }
 
-.results {
+.search-results .results {
   display: flex;
   gap: 30px;
+}
+
+.search-results .results li {
   cursor: pointer;
 }
 
@@ -303,6 +314,14 @@ a {
   border-radius: 7px;
   font-weight: bold;
   padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+.card-content .add-course .add-to-cart:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #6d28d2;
+  scale: 1.08;
 }
 
 /* Separator */
@@ -324,7 +343,7 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(250px, 280px));
   justify-content: center;
   gap: 40px;
-  margin: 40px;
+  margin: 40px 40px 60px 40px;
 }
 
 .cards.second h3 {
@@ -401,7 +420,6 @@ a {
 .related-results .results {
   display: flex;
   gap: 10px;
-  cursor: pointer;
   flex-wrap: wrap;
   flex: 0 0 auto;
 }
@@ -414,6 +432,7 @@ a {
   background-color: #6d28d2;
   color: white;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 /* Page Navigation */
@@ -461,12 +480,17 @@ a {
 
 /* Footer Design */
 
+.footer-container {
+  background: oklch(29.74% 0.0362 281.74deg);
+  width: 100%;
+}
+
 .company-container {
   display: flex;
   justify-content: space-between;
   align-content: centers;
   padding: 12px 48px;
-  background-color: oklch(29.74% 0.0362 281.74deg);
+  /* background-color: oklch(29.74% 0.0362 281.74deg); */
 }
 .text-container {
   display: flex;
@@ -492,7 +516,7 @@ a {
 /* More Content */
 .content-container {
   border-top: 1px solid white;
-  background-color: oklch(29.74% 0.0362 281.74deg);
+  /* background-color: oklch(29.74% 0.0362 281.74deg); */
   padding: 12px 48px 0;
 }
 
@@ -541,5 +565,55 @@ a {
 .content-container.bottom {
   border: none;
   background-color: oklch(25.65% 0.0265 278.04deg);
-  padding: 12px 48px 0;
+  padding: 12px 48px 20px;
+}
+
+/* Bottom Container */
+
+.udemy-footer {
+  padding: 20px 0 20px 0;
+  width: 100%;
+  background: oklch(25.65% 0.0265 278.04deg);
+  border-top: 1px solid white;
+}
+
+.bottom-container {
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.bottom-container img {
+  width: 91px;
+  height: 34px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.Udemy-Logo {
+  cursor: pointer;
+}
+.copyright-container {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.language-btn .language {
+  display: flex;
+  gap: 5px;
+}
+.bottom-container button {
+  all: unset;
+  color: white;
+  cursor: pointer;
+}
+.Cookie-btn .cookie:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
