@@ -308,6 +308,13 @@ a {
   margin: 0;
 }
 
+.previous-price {
+  padding-left: 15px;
+  color: gray;
+  text-decoration: line-through;
+  font-size: 20px;
+}
+
 .card-content .add-course .add-to-cart {
   color: #6d28d2;
   border: 2px solid #6d28d2;
